@@ -1,0 +1,117 @@
+\documentclass[10pt,twocolumn]{article}
+\usepackage{url}
+
+% Postscript fonts
+%\renewcommand{\sfdefault}{phv}
+%\renewcommand{\rmdefault}{ptm}
+%\renewcommand{\ttdefault}{pcr}
+\usepackage{times}
+\usepackage{helvet}             % sf font
+\usepackage{courier}            % tt font
+
+
+% Font size
+%\renewcommand{\normalsize}{\small}
+%\renewcommand{\footnotesize}{\small}
+
+% Compact itemize and enumerate.  Note that they use the same counters and
+% symbols as the usual itemize and enumerate environments.
+\def\compactify{\itemsep=0pt \topsep=0pt \partopsep=0pt \parsep=0pt}
+\let\latexusecounter=\usecounter
+\newenvironment{CompactItemize}
+  {\def\usecounter{\compactify\latexusecounter}
+   \begin{itemize}}
+  {\end{itemize}\let\usecounter=\latexusecounter}
+\newenvironment{CompactEnumerate}
+  {\def\usecounter{\compactify\latexusecounter}
+   \begin{enumerate}}
+  {\end{enumerate}\let\usecounter=\latexusecounter}
+
+% PDOS URL macro
+\makeatletter
+{\catcode`\/\active\catcode`\_\active\catcode`\.\active
+\gdef\URLslash{\futurelet\next\@@URLslash}%
+\gdef\@@URLslash{\ifx\next\URLslash\char`\/\else\slash\fi}%
+\gdef\URLdot{\char`\.\penalty\exhyphenpenalty}%
+\gdef\URLprepare{\catcode`\/\active\catcode`\_\active\catcode`\.\active
+        \let/\URLslash\let.\URLdot\def~{\char`\~}\def_{\char`\_}}}%
+\def\URL{\bgroup\URLprepare\realURL}%
+\def\realURL#1{\tt #1\egroup}%
+
+% margins
+\setlength{\topmargin}{-.5in}
+\setlength{\textheight}{9in}
+\setlength{\oddsidemargin}{-.25in}
+\setlength{\textwidth}{7in}
+\setlength{\columnsep}{.333in}
+
+% section styles - ACM bastards
+\global\def\section{\@startsection {section}{1}{\z@}%
+                                   {-1ex \@plus -1ex \@minus -.2ex}%
+                                   {0.5ex \@plus.2ex}%
+                                   {\normalfont\fontsize{12}{14}\bfseries}}
+\global\def\subsection{\@startsection{subsection}{2}{\z@}%
+                                     {-1ex\@plus -1ex \@minus -.2ex}%
+                                     {0.5ex \@plus .2ex}%
+                                     {\normalfont\fontsize{12}{14}\bfseries}}
+\global\def\subsubsection{\@startsection{subsubsection}{3}{\z@}%
+                                     {-1ex\@plus -1ex \@minus -.2ex}%
+                                     {0.5ex \@plus .2ex}%
+                                     {\normalfont\fontsize{11}{13}\itshape}}
+
+\interfootnotelinepenalty 1000000
+
+\title{\sffamily\fontsize{18}{18}
+\textbf{Testing BibTeX citations}}
+\author{\large David G. Andersen}
+
+\global\def\@maketitle{%
+  \newpage
+  \begin{center}%
+  \let \footnote \thanks
+\expandafter\ifx\csname acmdescription\endcsname\relax
+  \null
+\else
+  {\setbox0\hbox{\vbox{%
+\begin{flushright}%
+  \begin{tabular}[t]{r@{}}%
+    \acmdescription
+    \\ \noalign{\vskip0.25in}%
+  \end{tabular}%
+\end{flushright}%
+\null}}\ht0=0pt\dp0=0pt\box0}%
+\fi
+    \vskip -1.2em%
+    {\LARGE \@title \par}%
+    \vskip 2em%
+    {\large
+      \lineskip .5em%
+      \begin{tabular}[t]{c}%
+        \@author
+      \end{tabular}\par}%
+    \vskip 1em%
+    {\large \@date}%
+  \end{center}%
+  \par
+  \vskip 1em}
+\dp0=0pt\box0%
+
+\begin{document}
+
+\maketitle
+
+\begin{sloppypar}
+
+\input{citations}
+
+%\begin{footnotesize}
+\begin{small}
+\bibliography{ref,rfc}
+\bibliographystyle{acm}
+\end{small}
+%\end{footnotesize}
+
+
+\end{sloppypar}
+
+\end{document}
