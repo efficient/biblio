@@ -1,4 +1,4 @@
-#!/usr/bin/env ruby
+#!/usr/bin/env ruby1.8
 
 $LOAD_PATH << (File.dirname(__FILE__))
 
@@ -51,43 +51,49 @@ class BibParse
 
     bibent = nil
     ref = nil
+    linecount = 0
 
     IO.foreach("#{@bibfile}") { |l|
-      
-      if (l =~ /\@(.*)\{\s*(.*?)\s*,/) 
-        type = $1
-        ref = $2
+      linecount += 1
+      begin
+        if (l =~ /\@(.*)\{\s*(.*?)\s*,/) 
+          type = $1
+          ref = $2
+  
+          bibent = Hash.new
+          bibent["type"] = type
 
-        bibent = Hash.new
-        bibent["type"] = type
-
-      elsif (l =~ /@string\{(.*)\}/i)
-        strdef = $1
-        if (strdef =~ /(\w+)\s*\=\s*(.*)/)
-           strname = $1
-           strval = $2
-           val = cleanup(strval)
-           @strs[strname] = val
-        end
+        elsif (l =~ /@string\{(.*)\}/i)
+          strdef = $1
+          if (strdef =~ /(\w+)\s*\=\s*(.*)/)
+             strname = $1
+             strval = $2
+             val = cleanup(strval)
+             @strs[strname] = val
+          end
 
 #      elsif (l =~ /month\s*=\s*(.*),\s*year\s*=\s*(.*)/)
 #          bibent["month"] = $1
 #          bibent["year"] = $2
 
-      elsif (l =~ /^\s*(\w+)\s*=\s*(\w+)\s*,\s*(\w+)\s*=\s*(.*)/)
-          binsert(bibent, $1,$2)
-          binsert(bibent, $3,$4)
+        elsif (l =~ /^\s*(\w+)\s*=\s*(\w+)\s*,\s*(\w+)\s*=\s*(.*)/)
+            binsert(bibent, $1,$2)
+            binsert(bibent, $3,$4)
           
-      elsif (l =~ /\s*(\w+)\s*\=\s*(.*)/)
-          binsert(bibent, $1,$2)
+        elsif (l =~ /\s*(\w+)\s*\=\s*(.*)/)
+            binsert(bibent, $1,$2)
       
-      elsif (l =~ /^\}/)
+        elsif (l =~ /^\}/)
         
-        if (bibent["type"] == "proceedings")
-           @crossrefs[ref] = bibent
-        else
-           @entries[ref] = bibent
+          if (bibent["type"] == "proceedings")
+             @crossrefs[ref] = bibent
+          else
+             @entries[ref] = bibent
+          end
         end
+      rescue Exception => e
+        STDERR.puts "Error parsing at #{linecount}"
+        raise e
       end
     }
 
