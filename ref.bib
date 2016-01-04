@@ -21947,14 +21947,18 @@ year = 2006
 }
 
 @misc{www-mellanox-connectx3-brief,
-  key="mellanox-connectx3",
   title = "{Mellanox ConnectX-3} Product Brief",
   howpublished = "\url{http://www.mellanox.com/related-docs/prod_adapter_cards/ConnectX3_EN_Card.pdf}",
   year = 2013,
 }
 
+@misc{www-mellanox-connectx4-brief,
+  title = "{Mellanox ConnectX-4} Product Brief",
+  howpublished = "\url{http://www.mellanox.com/related-docs/prod_silicon/PB_ConnectX-4_VPI_Card.pdf}",
+  year = 2013,
+}
+
 @misc{www-mellanox-connectib-brief,
-  key="mellanox-connectib",
   title = "{Mellanox Connect-IB} Product Brief",
   howpublished = "\url{http://www.mellanox.com/related-docs/prod_adapter_cards/PB_Connect-IB.pdf}",
   year = 2015,
@@ -23883,6 +23887,11 @@ year = 2006
 @misc{www-intel-haswell-vol2,
   title = "{Intel Xeon Processor E5-1600/2400/2600/4600 v3 Product Families}",
   howpublished = "\url{http://www.intel.com/content/dam/www/public/us/en/documents/datasheets/xeon-e5-v3-datasheet-vol-2.pdf}",
+}
+
+@misc{www-intel-atom-c2000,
+  title = "{Intel Atom Processor C2000 Product Family for Microserver}",
+  howpublished = "\url{http://www.intel.in/content/dam/www/public/us/en/documents/datasheets/atom-c2000-microserver-datasheet.pdf}",
 }
 
 @misc{www-ibm-jvm,
@@ -27148,6 +27157,13 @@ note = "\url{http://www.3gpp.org/technologies/keywords-acronyms/100-the-evolved-
  year = {2007},
 }
 
+@inproceedings{Birrittella:hoti2015,
+ author = {Birrittella, Mark S. and Debbage, Mark and Huggahalli, Ram and Kunz, James and Lovett, Tom and Rimmer, Todd and  Underwood, Keith D. and Zak, Robert C.},
+ title = {Intel Omni-path Architecture: Enabling Scalable, High Performance Fabrics},
+ booktitle = {HOTI},
+ year = {2015},
+}
+
 @inproceedings{PRObE,
   title = {{PRObE: A Thousand-Node Experimental Cluster for Computer Systems Research}},
   author = {Garth Gibson and Gary Grider and Andree Jacobson and Wyatt Lloyd},
@@ -27183,10 +27199,33 @@ note = "\url{http://www.3gpp.org/technologies/keywords-acronyms/100-the-evolved-
 }
 
 @inproceedings{Szepesi2014,
-	title        = {Designing A Low-Latency Cuckoo Hash Table for Write-Intensive Workloads},
-	author       = {Szepesi, Tyler and Wong, Bernard and Cassell, Benjamin and and Brecht, Tim},
-	booktitle    = {WSRC},
-	year         = {2014}
+  title = {Designing A Low-Latency Cuckoo Hash Table for Write-Intensive Workloads},
+  author = {Szepesi, Tyler and Wong, Bernard and Cassell, Benjamin and and Brecht, Tim},
+  booktitle = {WSRC},
+  year = {2014}
+}
+
+@inproceedings{Szepesi2015,
+	title        = {Nessie: A Decoupled, Client-Driven, Key-Value Store Using {RDMA}},
+	author       = {Szepesi, Tyler and Cassell, Benjamin and Wong, Bernard and Brecht, Tim and Liu, Xiaoyi},
+	number       = {CS-2015-09},
+	institution  = {University of Waterloo, David R. Cheriton School of Computer Science},
+	address      = {Waterloo, Canada},
+	month        = {June},
+	year         = {2015}
+}
+
+@inproceedings{Hauger2009,
+  author = {Hauger, Simon and Wild, Thomas and Mutter, Arthur and Kirstaedter, Andreas and Karras, Kimon and Ohlendorf, Rainer and Feller, Frank and Scharf, Joachim},
+  booktitle = {Photonic Networks, 2009 ITG Symposium on},
+  title = {Packet Processing at 100 {Gbps} and Beyond - Challenges and Perspectives},
+  year = 2009
+}
+
+@inproceedings{Novakovic:2014,
+  author = {Novakovic, Stanko and Daglis, Alexandros and Bugnion, Edouard and Falsafi, Babak and Grot, Boris},
+  title = {Scale-out NUMA},
+  crossref = "asplos2014"
 }
 
 @misc{kagan2002doorbell,
@@ -27311,6 +27350,11 @@ note = "\url{http://www.3gpp.org/technologies/keywords-acronyms/100-the-evolved-
   howpublished = "\url{https://pcisig.com/specifications/}"
 }
 
+@misc{www-knights-landing,
+  title = "{Intel Xeon Phi Processor Knights Landing Architectural Overview}",
+  howpublished = "\url{https://www.nersc.gov/assets/Uploads/KNL-ISC-2015-Workshop-Keynote.pdf}"
+}
+
 % PROCEEDINGS - shared definitions for conferences, journals,
 % No normal entries should occur below this section.  Proceedings
 % definitions must occur _after_ they are referenced.  Please
@@ -27351,6 +27395,12 @@ Science ({FOCS})",
   booktitle="Proc. 16th International Conf. on Architectural Support for Programming Languages and Operating Systems ({ASPLOS})",
   address="Newport Beach, {CA}",
   month=mar, year=2011
+}
+
+@proceedings{asplos2014,
+  booktitle="Prof. 19th International Conf. on Architectural Support for Programming Languages and Operating Systems ({ASPLOS})",
+  address="Salt Lake City, {UT}",
+  month=mar, year=2014
 }
 
 @proceedings{conext2005,
