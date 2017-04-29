@@ -1245,7 +1245,9 @@ author = "{TechCrunch}"
 @inproceedings{Liu:conext2015,
   author = "He Liu and Matthew K. Mukerjee and Conglong Li and Nicolas Feltman and George Papen and Stefan Savage and Srinivasan Seshan and Geoffrey M. Voelker and David G. Andersen and Michael Kaminsky and George Porter and Alex C. Snoeren",
   title = "Scheduling Techniques for Hybrid Circuit/Packet Networks",
-  crossref = "conext2015"
+  crossref = "conext2015",
+  inpage="dga",
+  basefilename="solstice-conext15"
 }
 
 @inproceedings{Carli:sigcomm2009,
@@ -1443,6 +1445,17 @@ organization="Springer Verlag",
   title = "{TensorFlow}: A System for Large-Scale Machine Learning",
   crossref = "osdi2016"
 }
+
+@article{AbadiAndersen2017,
+  author = "Martin Abadi and David G. Andersen",
+  title = "Learning to Protect Communications with Adversarial Neural Cryptography",
+  howpublished={\url{https://arxiv.org/abs/1610.06918}},
+  journal   = {CoRR},
+  year      = 2016,
+  ee={\url{https://arxiv.org/abs/1610.06918}},
+  inpage = "dga"
+}
+
 
 @inproceedings{abd-el-malek:fast2005,
   author = "Michael Abd-El-Malek and William V. Courtright II and Chuck Cranor and Gregory R. Ganger and James Hendricks and Andrew J. Klosterman and Michael Mesnier and Manish Prasad and Brandon Salmon and Raja R. Sambasivan and Shafeeq Sinnamohideen and John D. Strunk and Eno Thereska and Matthew Wachs and Jay J. Wylie",
@@ -2149,7 +2162,9 @@ and David Wetherall",
 @inproceedings{Amur:socc2013,
   author = "Hrishikesh Amur and Wolfgang Richter and David G. Andersen and Michael Kaminsky and Karsten Schwan and Athula Balanachandran and Erik Zawadzki",
   title = "Memory-Efficient {GroupBy-Aggregate} using Compressed Buffer Trees",
-  crossref = "socc2013"
+  crossref = "socc2013",
+  inpage = "dga",
+  basefilename = "cbt-socc13"
 }
 
 @techreport{Amur:tr2013,
@@ -2294,6 +2309,13 @@ and David Wetherall",
   basefilename = "bestpath-imc2003"
 }
 
+@techreport{Andersen:cuckoocycle2015,
+  author = "David G. Andersen",
+  howpublished = {\url{http://www.cs.cmu.edu/~dga/crypto/cuckoo/analysis.pdf}},
+  title = "Exploiting Time-Memory Tradeoffs in Cuckoo Cycle",
+  inpage = "dga",
+}
+
 @inproceedings{Andersen:isw2003,
   author = "David G. Andersen and Rohit N. Rao",
   title = "An End-to-End Approach to Network Failure Recovery",
@@ -2421,7 +2443,8 @@ and David Wetherall",
   year = 2011,
   volume = 54,
   number = 7,
-  pages = {101--109}
+  pages = {101--109},
+  inpage = "dga"
 }
 
 @article{Andersen:micro2010,
@@ -2429,7 +2452,8 @@ and David Wetherall",
   author = "David G. Andersen and Steven Swanson",
   journal = "{IEEE} Micro",
   year = 2010,
-  note = "(Invited commentary article)"
+  note = "(Invited commentary article)",
+  inpage = "dga"
 }
 
 @inproceedings{Anderson:hotstorage2009,
@@ -8100,10 +8124,22 @@ pages={664 -669},
   year = 2006,
 }
 
+@inproceedings{Li:ancs2017,
+  title = "Using Indirect Routing to Recover from Network Traffic Scheduling Estimation Error",
+  author = "Conglong Li and Matthew K. Mukerjee and David G. Andersen and Srinivasan Seshan and Michael Kaminsky and George Porter and Alex C. Snoeren",
+  year = 2017,
+  month = may,
+  booktitle = "{ACM/IEEE Symposium on Architectures for Networking and Communications Systems (ANCS)}",
+  inpage="dga",
+  basefilename="indirection2017"
+}
+
 @inproceedings{Li:nsdi2016,
   title = "Be Fast, Cheap and in Control with SwitchKV",
   author ="Xiaozhou Li and Raghav Sethi and Michael Kaminsky and David G. Andersen and Michael J. Freedman",
-  crossref = "nsdi2016"
+  crossref = "nsdi2016",
+  inpage = "dga",
+  basefilename = "switchkv-nsdi2016"
 }
 
 @inproceedings{Li:osdi2014,
@@ -8147,7 +8183,9 @@ pages={664 -669},
   title = "Cuckoo Linear Algebra",
   author = "Li Zhou and David G. Andersen and Mu Li and Alex Smola",
   booktitle = "{ACM SIGKDD} Conference On Knowledge Discovery and Data Mining",
-  month=aug, year = 2015
+  month=aug, year = 2015,
+  inpage = "dga",
+  basefilename = "cuckooalgebra"
 }
 
 @article{Faleiro:vldb2015,
@@ -11496,18 +11534,23 @@ month = jun
   author = "Anuj Kalia and Michael Kaminsky and David G. Andersen",
   title = "Design Guidelines for High-Performance {RDMA} Systems",
   crossref = "usenix2016",
+  inpage = "dga",
 }
 
 @inproceedings{Kalia:nsdi2015,
 	author = {Anuj Kalia and Dong Zhou and Michael Kaminsky and David G. Andersen},
 	title = {Raising the Bar for Using {GPUs} in Software Packet Processing},
 	crossref = "nsdi2015",
+        inpage = "dga",
+        basefilename = "nsdi15-paper-kalia"
 }
 
 @inproceedings{Kalia:osdi2016,
  author = {Anuj Kalia and Michael Kaminsky and David G. Andersen},
  title = {{FaSST}: Fast, Scalable and Simple Distributed Transactions with Two-Sided (RDMA) Datagram RPCs},
- crossref = "osdi2016"
+ crossref = "osdi2016",
+ inpage = "dga",
+ basefilename = "fasst_osdi"
 }
 
 @inproceedings{Nelson:usenix2015,
@@ -13276,7 +13319,9 @@ crossref = "nsdi2009"
 @inproceedings{Lim:fast2016,
   title = "Towards Accurate and Fast Evaluation of Multi-Stage Log-Structured Designs",
   author = "Hyeontaek Lim and David G. Andersen and Michael Kaminsky",
-  crossref = "fast2016"
+  crossref = "fast2016",
+  inpage = "dga",
+  basefilename = "msls-eval-fast2016"
 }
 
 @inproceedings{Dragojevic:nsdi2014,
@@ -13459,6 +13504,7 @@ ISSN={0090-6778}, }
   page = "61--68",
   month = may,
   year = 2014,
+  inpage = "dga",
 }
 
 @inproceedings{Lockwood:nop2007,
@@ -14784,6 +14830,7 @@ g
   year = 2012,
   month = sep,
   note = {\url{http://www.pdl.cmu.edu/PDL-FTP/associated/CMU-PDL-12-109.pdf}},
+  inpage = "dga",
 }
 
 @inproceedings{Moraru:sosp2013,
@@ -14917,6 +14964,7 @@ g
   year = 2009,
   month = oct,
   number = {, number forthcoming},
+  inpage = "dga"
 }
 
 
@@ -19537,7 +19585,8 @@ year = 2009
   number = "CMU-CS-TR-141",
   institution =  "Carnegie Mellon University",
   year =         2007,
-  month =        jul
+  month =        jul,
+  inpage = "dga"
 }
 
 @TechReport{Vasudevan:SWAMP-TR-09-114,
@@ -19546,7 +19595,8 @@ year = 2009
   number = "CMU-CS-TR-114",
   institution =  "Carnegie Mellon University",
   year =         2009,
-  month =        mar
+  month =        mar,
+  inpage = "dga"
 }
 
 @inproceedings{Vasudevan:pam2009,
@@ -19589,6 +19639,7 @@ year = 2009
   month = jul,
   year = 2010,
   note = "2010 JouleSort Competition \url{http://sortbenchmark.org}",
+  inpage = "dga"
 }
 
 @article{Vasudevan:osr2011,
@@ -21112,6 +21163,8 @@ crossref = "sigcomm2008"
   author = {Zhang, Huanchen and Andersen, David G. and Pavlo, Andrew and Kaminsky, Michael and Ma, Lin and Shen, Rui}, 
   title = {Reducing the Storage Overhead of Main-Memory {OLTP} Databases with Hybrid Indexes}, 
   crossref = "sigmod2016",
+  inpage = "dga",
+  basefilename = "hybrid-index-sigmod2016"
 }
 
 @inproceedings{Zhang:isca2016,
@@ -26161,6 +26214,7 @@ year    =       1999
   title = "Fine-Grained Failover using Connection Migration",
   crossref = "usits2001",
   pages = "221--232",
+  inpage = "dga",
 }
 
 @phdthesis {snoeren02,
@@ -28259,7 +28313,7 @@ note = "\url{http://www.3gpp.org/technologies/keywords-acronyms/100-the-evolved-
     author = {Ankur Jain and Joseph M. Hellerstein and Sylvia Ratnasamy and David Wetherall},
     title = {A Wakeup Call for {I}nternet Monitoring Systems: {T}he Case for Distributed Triggers},
     crossref = "hotnets2004",
-}$
+}
 
 @inproceedings{Lee:caches2011,
  author = {Steen Larsen and Ben Lee},
@@ -28328,7 +28382,9 @@ note = "\url{http://www.3gpp.org/technologies/keywords-acronyms/100-the-evolved-
  title = {Architecting to Achieve a Billion Requests Per Second Throughput on a Single Key-value Store Server Platform},
  booktitle = {ISCA},
  year = {2015},
+ inpage = "dga",
 }
+
 @article{Li:tocs2016,
  author = {Li, Sheng and Lim, Hyeontaek and Lee, Victor W. and Ahn, Jung Ho and Kalia, Anuj and Kaminsky, Michael and Andersen, David G. and Seongil, O. and Lee, Sukhan and Dubey, Pradeep},
  title = {Full-Stack Architecting to Achieve a Billion Requests Per Second Throughput on a Single Key-value Store Server Platform},
@@ -28337,6 +28393,7 @@ note = "\url{http://www.3gpp.org/technologies/keywords-acronyms/100-the-evolved-
   number = 2,
   month = apr,
  year = 2016,
+  inpage = "dga",
 }
 
 @article{Li:ieeepicks2016,
@@ -28347,6 +28404,7 @@ note = "\url{http://www.3gpp.org/technologies/keywords-acronyms/100-the-evolved-
   number = 3,
   month = "may/june",
  year = 2016,
+ inpage = "dga",
 }
 
 @inproceedings{Chen:eurosys2016,
