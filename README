@@ -3,7 +3,11 @@
     conference itself as a citation.  (Unless that's what you want,
     of course).
 
-2)  Style issues:
+2)  ALL PROCEEDINGS ENTRIES MUST COME LAST.
+    @inproceedings MUST be before the @proceedings it references
+    if you use crossref.
+
+3)  Style issues:
     A great entry looks something like this:
 
 
