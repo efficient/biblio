@@ -3529,6 +3529,13 @@ pages = {223--234}
   month = 	 sep,
 }
 
+@inproceedings{Belay:osdi2012,
+  author = {Adam Belay and Andrea Bittau and Ali Mashtizadeh and David Terei and David Maz{\`e}res and Christos Kozyrakis},
+  title = {Dune: Safe user-level access to privileged {CPU} features},
+  booktitle = {Proceedings of the 10th {USENIX} conference on {Operating} {Systems} {Design} and {Implementaiton} ({OSDI}'12)},
+  year = 2012,
+}
+
 @inproceedings{Belay:osdi2014,
 	author = "Adam Belay and George Prekas and Ana Klimovic and Samuel Grossman and Christos Kozyrakis and Edouard Bugnion",
 	title = "{IX}: A Protected Dataplane Operating System for High Throughput and Low Latency",
@@ -29043,7 +29050,7 @@ howpublished = "\url{http://www.intel.com/go/dpdk}",
 @misc{www-rustlang,
     title = "{The {Rust} programming language}",
     howpublished = "\url{https://www.rust-lang.org}",
-    year = 2018,
+    year = 2019,
 }
 
 @misc{www-rustlang-ub,
@@ -29063,7 +29070,21 @@ howpublished = "\url{http://www.intel.com/go/dpdk}",
 @misc{www-golang,
     title = "{The {Go} programming language}",
     howpublished = "\url{https://golang.org}",
-    year = 2018,
+    year = 2019,
+}
+
+@misc{www-golang-fficall,
+  author = {Daniel Eloff},
+  title = {Go proposal: a faster {C}-call mechanism for non-blocking {C} functions},
+  howpublished = {https://github.com/golang/go/issues/16051},
+  year = 2016,
+}
+
+@misc{www-golang-tightloop,
+  author = {Austin Clements},
+  title = {Go runtime: tight loops should be preemptible},
+  howpublished = {https://github.com/golang/go/issues/10958},
+  year = 2015,
 }
 
 @misc{www-erlang,
@@ -32955,9 +32976,58 @@ month={April},}
   address = {Palo Alto, CA}
 }
 
+@misc{dlmopen-manpage,
+  key = {dlmopen},
+  title = {dlmopen(3) manual page from {Linux} man-pages project},
+  year = 2019,
+  month = sept,
+}
+
+@techreport{haynes:iucs1984,
+  author = {C. T. Haynes and D. P. Friedman},
+  title = {Engines build process abstractions},
+  number = {TR159},
+  institution = {{Indiana University Computer Science Technical Reports}},
+  year = 1984,
+  url = {https://cs.indiana.edu/ftp/techreports/TR159.pdf},
+}
+
+@techreport{hunt:msr2005,
+  author = {Galen Hunt et al.},
+  title = {An overview of the {Singularity} project},
+  number = {MSR-TR-2005-135},
+  institution = {{Microsoft Research Technical Reports}},
+  year = 2005,
+  url = {https://www.microsoft.com/en-us/research/publication/an-overview-of-the-singularity-project},
+}
+
+@inproceedings{mollison:rtas2013,
+  author = {Malcolm S. Mollison and James H. Anderson},
+  title = {Bringing theory into practice: A userpsace library for multicore real-time scheduling},
+  booktitle = {2013 {IEEE} 19th {Real-Time} and {Embedded} {Technology} and {Applications} {Symposium} ({RTAS})},
+  year = 2013,
+  address = {Philadelphia, PA},
+}
+
 @misc{setrlimit-manpage,
   key = "setrlimit()",
   title = "{setrlimit(2) manual page from Linux man-pages project}",
   year = 2019,
   month = sept,
+}
+
+@misc{signal-safety-manpage,
+  key = {signal-safety},
+  title = {signal-safety(7) manual page from {Linux} man-pages project},
+  year = 2019,
+  month = sept,
+}
+
+@techreport{vanderwaart:cmucs2006,
+  author = {C. Joseph Vanderwaart},
+  title = {Static enforcement of timing policies using code certification},
+  number = {CMU-CS-06-143},
+  institution = {{Carnegie Mellon Computer Science Technical Report Collection}},
+  year = 2006,
+  url = {http://reports-archive.adm.cs.cmu.edu/anon/2006/abstracts/06-143.html},
 }
