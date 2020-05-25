@@ -1690,6 +1690,13 @@ organization="Springer Verlag",
   inpage = "dga"
 }
 
+@inproceedings{Thomas:hotcloud2018,
+	author = {Thomas, Shelby and Voelker, Geoffrey M. and Porter, George},
+	title = {Cachecloud: Towards Speed-of-Light Datacenter Communication},
+	year = {2018},
+	booktitle = {Proceedings of the 10th USENIX Conference on Hot Topics in Cloud Computing},
+}
+
 @article{Beverly05,
   author = "M. Afergan and R. Beverly",
   title = "{The State of the Email Address}",
@@ -5925,6 +5932,12 @@ year=2007
   author = {Jian Yang and Joseph Izraelevitz and Steven Swanson},
   title = {Orion: A Distributed File System for Non-Volatile Main Memory and {RDMA}-Capable Networks},
   crossref = "fast2019"
+}
+
+@inproceedings{Yang:nsdi2020,
+	author = {Jian Yang and Joseph Izraelevitz and Steven Swanson},
+	title = {FileMR: Rethinking {RDMA} Networking for Scalable Persistent Memory },
+  crossref = "nsdi2020"
 }
 
 @article{Anderson:arxiv2019,
@@ -22239,6 +22252,13 @@ crossref = "sigcomm2008"
   year = 2017,
 }
 
+@inproceedings{Chen:asplos2020,
+  author = {Chen, Youmin and Lu, Youyou and Yang, Fan and Wang, Qing and Wang, Yang and Shu, Jiwu},
+  title = {FlatStore: An Efficient Log-Structured Key-Value Storage Engine for Persistent Memory},
+  year = {2020},
+  booktitle = {Proceedings of the Twenty-Fifth International Conference on Architectural Support for Programming Languages and Operating Systems},
+}
+
 @inproceedings{Zhou:middleware2003,
     author = "Feng Zhou and Li Zhuang and Ben Y. Zhao and Ling Huang and Anthony Joseph and John Kubiatowicz",
     title = "Approximate Object Location and Spam Filtering on Peer-to-Peer Systems",
@@ -24097,6 +24117,11 @@ year = 2006
 @misc{www-ibv-modify-qp,
   key = "{RDMAmojo} - blog on {RDMA} technology and programming by {Dotan Barak}",
   howpublished = "\url{http://www.rdmamojo.com/2013/01/12/ibv_modify_qp/}"
+}
+
+@misc{www-stackoverflow-clwb,
+  key = "Intel's CLWB instruction invalidating cache lines",
+  howpublished = "\url{https://stackoverflow.com/questions/60266778/intels-clwb-instruction-invalidating-cache-lines}"
 }
 
 @article{Zhang:jsac2014,
@@ -28513,6 +28538,13 @@ key = "VxLAN RFC",
 title = "VxLAN: A Framework for Overlaying Virtualized Layer 2 Networks over Layer 3 Networks",
 note = "\url{http://tools.ietf.org/html/draft-mahalingam-dutt-dcops-vxlan-01}"
 }
+
+@misc{www-rdmacommit-rfc-draft,
+ key = "Tom Talpey RDMA Commit",
+ title = "{RDMA} Extensions for Enhanced Memory Placement",
+ note = "\url{https://tools.ietf.org/id/draft-talpey-rdma-commit-01.html}"
+}
+
 @misc{www-opencalais,
 key = "OpenCalais",
 title = "OpenCalais",
@@ -29615,6 +29647,12 @@ howpublished = "\url{https://code.google.com/p/cityhash/}",
  year=2012,
 }
 
+@misc{www-intel-optimization-manual-optane,
+ title = "{Intel} 64 and {IA-32} Architectures Optimization Reference Manual",
+ howpublished = "\url{https://software.intel.com/sites/default/files/managed/9e/bc/64-ia-32-architectures-optimization-manual.pdf}",
+ year=2020,
+}
+
 @inproceedings{Zukowski2006,
  author = {Zukowski, Marcin and H{\'e}man, S\'{a}ndor and Boncz, Peter},
  title = {Architecture-conscious Hashing},
@@ -29981,6 +30019,12 @@ note = "\url{http://www.3gpp.org/technologies/keywords-acronyms/100-the-evolved-
  title = {{RDMA} Reads: To Use or Not to Use?},
  journal = {{IEEE} Data Eng. Bull.},
  year = 2017
+}
+
+@inproceedings{Buragohain:sigmod2020,
+    title={A1: A Distributed In-Memory Graph Database},
+    author={Chiranjeeb Buragohain and Knut Magne Risvik and Paul Brett and Miguel Castro and Wonhee Cho and Joshua Cowhig and Nikolas Gloy and Karthik Kalyanaraman and Richendra Khanna and John Pao and Matthew Renzelmann and Alex Shamis and Timothy Tan and Shuheng Zheng},
+    crossref = "sigmod2020"
 }
 
 @inproceedings{Binnig:vldb2016,
@@ -31343,6 +31387,12 @@ Science ({FOCS})",
   month = feb, year = 2019
 }
 
+@proceedings{nsdi2020,
+  booktitle = "Proc. 17th {USENIX} {NSDI}",
+  address = "Santa Clara, {CA}",
+  month = feb, year = 2020
+}
+
 @proceedings{openarch2002,
   booktitle ="{Proc. 5th International Conference on Open Architectures and Network Programming (OPENARCH)}",
   address = "New York, {NY}",
@@ -31826,6 +31876,12 @@ Science ({FOCS})",
   booktitle = "Proc. ACM SIGMOD",
   address = "Houston, {TX}, USA",
   month = jun, year = 2018
+}
+
+@proceedings{sigmod2020,
+  booktitle = "Proc. ACM SIGMOD",
+  address = "Portland, {OR}, USA",
+  month = jun, year = 2020
 }
 
 @proceedings{socc2010,
