@@ -33457,3 +33457,35 @@ month={April},}
   author = {Michal Zalewski},
   howpublished = "\url{https://lcamtuf.coredump.cx/signals.txt}",
 }
+
+@article{zhu-vldb2017,
+author = {Zhu, Jianqiao and Potti, Navneet and Saurabh, Saket and Patel, Jignesh M.},
+title = {Looking ahead makes query plans robust: making the initial case with in-memory star schema data warehouse workloads},
+year = {2017},
+publisher = {VLDB Endowment},
+volume = {10},
+number = {8},
+issn = {2150-8097},
+url = {https://doi.org/10.14778/3090163.3090167},
+doi = {10.14778/3090163.3090167},
+abstract = {Query optimizers and query execution engines cooperate to deliver high performance on complex analytic queries. Typically, the optimizer searches through the plan space and sends a selected plan to the execution engine. However, optimizers may at times miss the optimal plan, with sometimes disastrous impact on performance. In this paper, we develop the notion of robustness of a query evaluation strategy with respect to a space of query plans. We also propose a novel query execution strategy called Lookahead Information Passing (LIP) that is robust with respect to the space of (fully pipeline-able) left-deep query plan trees for in-memory star schema data warehouses. LIP ensures that execution times for the best and the worst case plans are far closer than without LIP. In fact, under certain assumptions of independent and uniform distributions, any plan in that space is theoretically guaranteed to execute in near-optimal time. LIP ensures that the execution time for every plan in the space is nearly-optimal. In this paper, we also evaluate these claims using workloads that include skew and correlation. With LIP we make an initial foray into a novel way of thinking about robustness from the perspective of query evaluation, where we develop strategies (like LIP) that collapse plan sub-spaces in the overall global plan space.},
+journal = {Proc. VLDB Endow.},
+month = apr,
+pages = {889–900},
+numpages = {12}
+}
+
+@inproceedings{yang:cidr2024,
+  author = {Yifei Yang and Hangdong Zhao and Xiangyao Yu and Paraschos Koutris},
+  title = {Predicate Transfer: Efficient Pre-filtering on Multi-join Queries},
+  booktitle = {14th Biennial Conference on Innovative Data Systems Research, CIDR},
+  year = {2024}
+}
+@inproceedings{Yannakakis:vldb1981,
+  author = {Mihalis Yannakakis},
+  title = {Algorithms for acyclic database schemes},
+  booktitle = {Proceedings of the 7th International Conference on Very Large Data Bases},
+  volume = {81},
+  pages = {82--94},
+  year = {1981}
+}
