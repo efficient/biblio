@@ -33490,22 +33490,12 @@ numpages = {12}
   year = {1981}
 }
 
-@article{Lemire:interval2019,
-author = {Lemire, Daniel},
-title = {Fast Random Integer Generation in an Interval},
-year = 2019,
-issue_date = {January 2019},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-volume = {29},
-number = {1},
-issn = {1049-3301},
-url = {https://doi.org/10.1145/3230636},
-doi = {10.1145/3230636},
-abstract = {In simulations, probabilistic algorithms, and statistical tests, we often generate random integers in an interval (e.g., [0,s)). For example, random integers in an interval are essential to the Fisher-Yates random shuffle. Consequently, popular languages such as Java, Python, C++, Swift and Go include ranged random integer generation functions as part of their runtime libraries.Pseudo-random values are usually generated in words of a fixed number of bits (e.g., 32b,&nbsp;64b) using algorithms such as a linear congruential generator. We need functions to convert such random words to random integers in an interval ([0,s)) without introducing statistical biases. The standard functions in programming languages such as Java involve integer divisions. Unfortunately, division instructions are relatively expensive. We review an unbiased function to generate ranged integers from a source of random words that avoids integer divisions with high probability. To establish the practical usefulness of the approach, we show that this algorithm can multiply the speed of unbiased random shuffling on x64 processors. Our proposed approach has been adopted by the Go language for its implementation of the shuffle function.},
-journal = {ACM Trans. Model. Comput. Simul.},
-month = jan,
-articleno = {3},
-numpages = {12},
-keywords = {Random number generation, randomized algorithms, rejection method}
+@misc{apple:bloom2023,
+      title={Split block Bloom filters},
+      author={Jim Apple},
+      year={2023},
+      eprint={2101.01719},
+      archivePrefix={arXiv},
+      primaryClass={cs.DS},
+      url={https://arxiv.org/abs/2101.01719},
 }
