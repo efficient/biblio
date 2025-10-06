@@ -4,3 +4,12 @@ auto/
 
 test/ref.bib
 test/rfc.bib
+test/citations.tex
+test/test.ps
+test/test.dvi
+test/ref.bib
+test/rfc.bib
+test/test.aux
+test/test.bbl
+test/test.blg
+test/test.log
